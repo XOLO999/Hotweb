@@ -99,3 +99,20 @@ document.querySelector('form').addEventListener('submit', (e) => {
     }
   }, 300);
 });
+// Smooth Scroll for Navbar
+document.querySelectorAll('.navbar a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Floating Button Action
+document.querySelector('.floating-btn').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
