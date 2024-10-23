@@ -826,3 +826,158 @@ body.dark-mode .card {
   padding: 2px 4px;
   border-radius: 3px;
 }
+.version-control {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.version-control h3 {
+  color: #333;
+}
+
+.version-control button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.version-control button:hover {
+  background-color: #218838;
+}
+
+.version-control input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.version-control ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.version-control li {
+  padding: 10px;
+  background-color: #e9e9e9;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+.pull-requests {
+  padding: 20px;
+  background-color: #eef4ff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.pull-requests ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pull-requests li {
+  padding: 10px;
+  background-color: #e0e7ff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.pull-requests button {
+  background-color: #0366d6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pull-requests button:hover {
+  background-color: #0056b3;
+}
+.issue-tracker {
+  padding: 20px;
+  background-color: #fff4e6;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.issue-tracker ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.issue-tracker li {
+  padding: 10px;
+  background-color: #ffe6cc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.issue-tracker button {
+  background-color: #ff7700;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.issue-tracker button:hover {
+  background-color: #ff5500;
+}
+.fork-project {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.fork-project button {
+  background-color: #6f42c1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fork-project button:hover {
+  background-color: #563d7c;
+}
+
+.fork-project ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fork-project li {
+  padding: 10px;
+  background-color: #eae8fc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar button {
+  background-color: #ffcc
