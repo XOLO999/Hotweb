@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+⁸<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -192,3 +192,27 @@
   </div>
 </div>
 <div id="fileEditorContainer"></div>
+<div class="file-edit">
+  <textarea id="codeEditor" placeholder="Edit your code here..."></textarea>
+  <input type="text" id="commitMessage" placeholder="Enter commit message" />
+  <button onclick="commitChanges()">Commit Changes</button>
+</div>
+<div class="branch-switch">
+  <select id="branchSelector">
+    <option>Main</option>
+    <option>Feature-1</option>
+  </select>
+  <button onclick="createBranch()">Create New Branch</button>
+</div>
+<div class="diff-viewer">
+  <h3>Code Diff</h3>
+  <pre id="diffOutput">No changes detected...</pre>
+  <button onclick="showDiff()">Show Diff</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/diff/5.0.0/diff.min.js"></script>
+<div class="file-history">
+  <h3>File History</h3>
+  <ul id="historyList">
+    <li>Initial Commit - Added basic file structure</li>
+  </ul>
+</div>
