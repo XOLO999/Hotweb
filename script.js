@@ -161,3 +161,57 @@ function saveEditedFile(fileName) {
   const editedCode = document.getElementById('codeEditor').value;
   alert(`Code in ${fileName} has been saved:\n${editedCode}`);
 }
+function commitChanges() {
+  const code = document.getElementById('codeEditor').value;
+  const commitMessage = document.getElementById('commitMessage').value;
+  if (commitMessage.trim() === '') {
+    alert('Commit message cannot be empty!');
+  } else {
+    alert(`Commit Message: ${commitMessage}\nCode Saved: \n${code}`);
+  }
+}
+function createBranch() {
+  const newBranch = prompt('Enter the name for the new branch:');
+  if (newBranch) {
+    const branchSelector = document.getElementById('branchSelector');
+    const newOption = document.createElement('option');
+    newOption.text = newBranch;
+    branchSelector.add(newOption);
+    branchSelector.value = newBranch;
+    alert(`New branch "${newBranch}" created and switched to!`);
+  }
+      }
+let oldCode = `function sayHello() {\n  console.log("Hello, World!");\n}`;
+
+function showDiff() {
+  const newCode = document.getElementById('codeEditor').value;
+  const diffOutput = document.getElementById('diffOutput');
+  
+  const diff = JsDiff.diffLines(oldCode, newCode);
+  let diffHtml = '';
+  
+  diff.forEach((part) => {
+    if (part.added) {
+      diffHtml += `<span class="diff-added">+${part.value}</span>`;
+    } else if (part.removed) {
+      diffHtml += `<span class="diff-removed">-${part.value}</span>`;
+    } else {
+      diffHtml += part.value;
+    }
+  });
+
+  diffOutput.innerHTML = diffHtml || 'No changes detected...';
+}
+function commitChanges() {
+  const code = document.getElementById('codeEditor').value;
+  const commitMessage = document.getElementById('commitMessage').value;
+  if (commitMessage.trim() === '') {
+    alert('Commit message cannot be empty!');
+  } else {
+    const historyList = document.getElementById('historyList');
+    const newHistoryItem = document.createElement('li');
+    newHistoryItem.textContent = commitMessage;
+    historyList.appendChild(newHistoryItem);
+    alert(`Commit Message: ${commitMessage}\nCode Saved: \n${code}`);
+  }
+}
