@@ -701,3 +701,128 @@ body.dark-mode .card {
 .file-item button:hover {
   background-color: #138496;
 }
+.file-edit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#codeEditor {
+  width: 100%;
+  height: 200px;
+  font-family: monospace;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+#commitMessage {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.file-edit button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-edit button:hover {
+  background-color: #218838;
+}
+.branch-switch {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#branchSelector {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.branch-switch button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.branch-switch button:hover {
+  background-color: #0056b3;
+  }
+.diff-viewer {
+  margin-top: 20px;
+}
+
+#diffOutput {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}
+
+.diff-added {
+  color: green;
+}
+
+.diff-removed {
+  color: red;
+}
+
+.diff-viewer button {
+  padding: 10px 20px;
+  background-color: #ffdd40;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.diff-viewer button:hover {
+  background-color: #ffcc00;
+}
+.file-history {
+  margin-top: 20px;
+}
+
+.file-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-history li {
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.file-history li:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+.diff-added {
+  background-color: #e6ffe6;
+  color: #006600;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.diff-removed {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
