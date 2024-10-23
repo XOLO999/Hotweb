@@ -173,3 +173,22 @@
     <source src="background-video.mp4" type="video/mp4">
   </video>
 </div>
+<div class="file-item">
+  <input type="text" id="fileName" value="CurrentFileName.txt" />
+  <button onclick="renameFile()">Rename</button>
+</div>
+<div class="code-editor-container">
+  <textarea id="codeEditor"></textarea>
+  <button onclick="saveCode()">Save Code</button>
+</div>
+<div class="file-list">
+  <div class="file-item">
+    <input type="text" id="file1" value="File1.js" />
+    <button onclick="editFile('file1')">Edit</button>
+  </div>
+  <div class="file-item">
+    <input type="text" id="file2" value="File2.css" />
+    <button onclick="editFile('file2')">Edit</button>
+  </div>
+</div>
+<div id="fileEditorContainer"></div>
