@@ -67,3 +67,93 @@
   <script src="scripts.js"></script>
 </body>
   </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotweb - Ultimate Features</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar (same as before) -->
+  <div class="navbar">
+    <div class="logo">Hotweb</div>
+    <div class="menu">
+      <a href="#upload">Upload</a>
+      <a href="#publish">Publish</a>
+      <a href="#slider">Slider</a>
+      <a href="#fab">Actions</a>
+    </div>
+  </div>
+
+  <!-- Hero Section (same as before) -->
+  <section class="hero-section">
+    <h1>Welcome to Hotweb!</h1>
+    <p>The future of study material starts here!</p>
+    <button id="toggleTheme">Toggle Dark/Light Mode</button>
+  </section>
+
+  <!-- Sticky Sidebar -->
+  <aside class="sticky-sidebar">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#upload">File Upload</a></li>
+      <li><a href="#slider">Explore Files</a></li>
+      <li><a href="#publish">Publish Your Work</a></li>
+    </ul>
+  </aside>
+
+  <!-- File Upload Section (same) -->
+  <section id="upload" class="upload-section">
+    <h2>Upload Your Files</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" required>
+      <input type="submit" value="Upload">
+    </form>
+    <progress id="fileProgress" value="0" max="100"></progress>
+  </section>
+
+  <!-- Accordion Section (New) -->
+  <section id="accordion-section">
+    <h2>FAQ</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <h3 class="accordion-title">What is Hotweb?</h3>
+        <div class="accordion-content">
+          <p>Hotweb is the best platform for study material sharing.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-title">How to upload files?</h3>
+        <div class="accordion-content">
+          <p>You can upload files using the "Upload" section with just one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Modal (New Feature) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Subscribe to Updates</h2>
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Image Slider (same as before) -->
+  <section id="slider" class="slider-section">
+    <h2>Explore Files</h2>
+    <div class="slider">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+                                           </html>
