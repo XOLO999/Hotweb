@@ -617,3 +617,87 @@ body.dark-mode .card {
   object-fit: cover;
   filter: brightness(0.5);
 }
+.file-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.file-item input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.file-item button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.file-item button:hover {
+  background-color: #218838;
+  }
+.code-editor-container {
+  margin: 20px 0;
+}
+
+#codeEditor {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: monospace;
+  padding: 10px;
+}
+
+.code-editor-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.code-editor-container button:hover {
+  background-color: #0056b3;
+    }
+.file-list {
+  margin: 20px 0;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file-item input {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.file-item button {
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-item button:hover {
+  background-color: #138496;
+}
