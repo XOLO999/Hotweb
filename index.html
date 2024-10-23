@@ -216,3 +216,53 @@
     <li>Initial Commit - Added basic file structure</li>
   </ul>
 </div>
+<div class="version-control">
+  <h3>Version Control</h3>
+  <button onclick="commitChanges()">Commit Changes</button>
+  <input type="text" id="commitMessage" placeholder="Enter commit message" />
+  <ul id="versionList">
+    <li>Initial Commit - Added project structure</li>
+  </ul>
+</div>
+<div class="pull-requests">
+  <h3>Open Pull Requests</h3>
+  <ul id="prList">
+    <li>PR #1 - Added new homepage design</li>
+  </ul>
+  <button onclick="createPullRequest()">Create New Pull Request</button>
+</div>
+<div class="issue-tracker">
+  <h3>Open Issues</h3>
+  <ul id="issueList">
+    <li>Issue #1 - Fix login button not working</li>
+  </ul>
+  <button onclick="createIssue()">Create New Issue</button>
+</div>
+<div class="fork-project">
+  <h3>Fork Project</h3>
+  <button onclick="forkProject()">Fork</button>
+  <ul id="forkList">
+    <li>Forked by User1</li>
+  </ul>
+</div>
+<div class="navbar">
+  <h1>Hotweb - The Baap Level Site</h1>
+  <button onclick="showMenu()">Menu</button>
+</div>
+
+<div class="sidebar">
+  <ul>
+    <li>Home</li>
+    <li>Files</li>
+    <li>Commits</li>
+    <li>Pull Requests</li>
+    <li>Issues</li>
+    <li>Forks</li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <h2>Welcome to Hotweb</h2>
+  <p>The world’s most powerful study site with ultimate features.</p>
+  <!-- All your GitHub-like features will be here -->
+</div>
