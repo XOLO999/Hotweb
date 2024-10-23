@@ -116,3 +116,26 @@ document.querySelector('.floating-btn').addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+// Dark Mode Toggle
+const toggleButton = document.getElementById('dark-mode-toggle');
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    toggleButton.textContent = 'Switch to Light Mode';
+  } else {
+    toggleButton.textContent = 'Switch to Dark Mode';
+  }
+});
+// Scroll-Triggered Animations
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.scroll-reveal').forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      element.classList.add('revealed');
+    }
+  });
+});
+// Apply Fade In Transition to Page Load
+window.addEventListener('load', () => {
+  document.body.classList.add('fade-in');
+});
