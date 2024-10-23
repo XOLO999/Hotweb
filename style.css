@@ -239,3 +239,219 @@ body {
 .close-btn:hover {
   color: #c70039;
   }
+/* Global Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Advanced Container Design */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* Killer Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffdd40;
+  text-transform: uppercase;
+}
+
+.navbar .menu a {
+  color: #ffdd40;
+  margin-left: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+  color: #f40;
+}
+
+/* Hero Section with Gradient Animation */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-section button {
+  background-color: #ff5733;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+
+.hero-section button:hover {
+  background-color: #c70039;
+}
+
+/* Floating Action Buttons (FAB) */
+.floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ffdd40;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.floating-btn:hover {
+  background-color: #ffc107;
+  transform: translateY(-5px);
+}
+
+/* Parallax Section */
+.parallax {
+  background-image: url('parallax-bg.jpg');
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Layout for Notes */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1b1b1b;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #ffdd40;
+  padding: 15px;
+}
+
+.card p {
+  color: #fff;
+  padding: 0 15px 20px;
+  font-size: 1rem;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: #ff5733;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card a:hover {
+  background-color: #c70039;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1117;
+  padding: 20px;
+  text-align: center;
+  color: #c9d1d9;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ffdd40;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff5733;
+  }
