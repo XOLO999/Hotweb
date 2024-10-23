@@ -1083,3 +1083,117 @@ footer {
     bottom: 0;
     width: 100%;
   }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0a0f17;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111722;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    color: #00d8ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-items a {
+    color: #a0a0a0;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: #00d8ff;
+}
+
+.main-layout {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #131922;
+    padding: 30px;
+    height: calc(100vh - 80px); /* Subtracting the navbar height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 25px 0;
+}
+
+.sidebar ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1e2633;
+    color: #00d8ff;
+}
+
+.content {
+    flex: 1;
+    padding: 50px;
+    background-color: #0a0f17;
+    color: #e0e0e0;
+}
+
+.content h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00d8ff;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+
+.content p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #b0b0b0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111722;
+    color: #a0a0a0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
