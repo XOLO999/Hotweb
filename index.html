@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotweb - Ultimate Design & Functionality</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Hotweb</div>
+    <div class="menu">
+      <a href="#upload">Upload</a>
+      <a href="#publish">Publish</a>
+      <a href="#slider">Slider</a>
+      <a href="#fab">Actions</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Welcome to Hotweb!</h1>
+    <p>Unmatched design, killer features, and ultimate functionality!</p>
+    <button id="toggleTheme">Toggle Dark/Light Mode</button>
+  </section>
+
+  <!-- File Upload Section -->
+  <section id="upload" class="upload-section">
+    <h2>Upload Your Files</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" required>
+      <input type="submit" value="Upload">
+      <div id="progressContainer">
+        <progress id="fileProgress" value="0" max="100"></progress>
+      </div>
+    </form>
+  </section>
+
+  <!-- Image Slider Section -->
+  <section id="slider" class="slider-section">
+    <h2>Explore Files</h2>
+    <div class="slider">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+  </section>
+
+  <!-- Floating Action Button (FAB) -->
+  <section id="fab" class="fab-section">
+    <button class="fab">+</button>
+  </section>
+
+  <!-- 3D Cards Section -->
+  <section class="card-section">
+    <h2>Our Special Features</h2>
+    <div class="card">
+      <div class="inner-card">
+        <div class="front">HTML</div>
+        <div class="back">Powerful Coding</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+  </html>
