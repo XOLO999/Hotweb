@@ -145,3 +145,97 @@ progress {
   color: white;
   transform: rotateY(180deg);
   }
+/* Global styles (same as before) */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* Sticky Sidebar */
+.sticky-sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #161b22;
+  padding: 1rem;
+}
+
+.sticky-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sticky-sidebar a {
+  text-decoration: none;
+  color: #ff5733;
+  display: block;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.sticky-sidebar a:hover {
+  color: #ff8a33;
+}
+
+/* Accordion Style */
+.accordion {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  background-color: #161b22;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.accordion-title {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #ff5733;
+  color: white;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Modal Popup */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  margin: 15% auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ff5733;
+}
+
+.close-btn:hover {
+  color: #c70039;
+  }
