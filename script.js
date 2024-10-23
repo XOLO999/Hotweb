@@ -53,3 +53,49 @@ cards.forEach(card => {
     card.querySelector('.inner-card').classList.remove('flip');
   });
 });
+// Dark/Light Mode Toggle (same as before)
+document.getElementById('toggleTheme').addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+});
+
+// Accordion Functionality
+let accordionItems = document.querySelectorAll('.accordion-title');
+accordionItems.forEach(item => {
+  item.addEventListener('click', () => {
+    let content = item.nextElementSibling;
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  });
+});
+
+// Modal Popup
+let modal = document.getElementById('modal');
+let closeModalBtn = document.querySelector('.close-btn');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    modal.style.display = 'block';
+  }, 3000); // Show modal after 3 seconds
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Progress Bar for File Upload (enhanced)
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  let progressBar = document.getElementById('fileProgress');
+  
+  let uploadSimulation = setInterval(() => {
+    if (progressBar.value < 100) {
+      progressBar.value += 10; // Simulate upload progress
+    } else {
+      clearInterval(uploadSimulation);
+      alert('File uploaded successfully!');
+    }
+  }, 300);
+});
