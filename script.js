@@ -139,3 +139,25 @@ window.addEventListener('scroll', () => {
 window.addEventListener('load', () => {
   document.body.classList.add('fade-in');
 });
+function renameFile() {
+  const newName = document.getElementById('fileName').value;
+  alert(`File renamed to: ${newName}`);
+}
+function saveCode() {
+  const code = document.getElementById('codeEditor').value;
+  alert(`Code saved:\n${code}`);
+}
+function editFile(fileId) {
+  const fileName = document.getElementById(fileId).value;
+  const editorHtml = `
+    <h3>Editing: ${fileName}</h3>
+    <textarea id="codeEditor" rows="10" cols="50"></textarea>
+    <button onclick="saveEditedFile('${fileName}')">Save</button>
+  `;
+  document.getElementById('fileEditorContainer').innerHTML = editorHtml;
+}
+
+function saveEditedFile(fileName) {
+  const editedCode = document.getElementById('codeEditor').value;
+  alert(`Code in ${fileName} has been saved:\n${editedCode}`);
+}
