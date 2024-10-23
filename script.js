@@ -215,3 +215,51 @@ function commitChanges() {
     alert(`Commit Message: ${commitMessage}\nCode Saved: \n${code}`);
   }
 }
+function commitChanges() {
+  const commitMessage = document.getElementById('commitMessage').value;
+  if (!commitMessage.trim()) {
+    alert('Commit message cannot be empty!');
+    return;
+  }
+
+  const versionList = document.getElementById('versionList');
+  const newVersion = document.createElement('li');
+  newVersion.textContent = commitMessage;
+  versionList.appendChild(newVersion);
+
+  alert('Commit added: ' + commitMessage);
+  document.getElementById('commitMessage').value = ''; // Clear the input
+}
+function createPullRequest() {
+  const prTitle = prompt('Enter the title for the pull request:');
+  if (!prTitle) return;
+
+  const prList = document.getElementById('prList');
+  const newPR = document.createElement('li');
+  newPR.textContent = `PR - ${prTitle}`;
+  prList.appendChild(newPR);
+
+  alert(`New Pull Request Created: ${prTitle}`);
+}
+function createIssue() {
+  const issueTitle = prompt('Enter the title for the new issue:');
+  if (!issueTitle) return;
+
+  const issueList = document.getElementById('issueList');
+  const newIssue = document.createElement('li');
+  newIssue.textContent = `Issue - ${issueTitle}`;
+  issueList.appendChild(newIssue);
+
+  alert(`New Issue Created: ${issueTitle}`);
+}
+function forkProject() {
+  const username = prompt('Enter your username to fork this project:');
+  if (!username) return;
+
+  const forkList = document.getElementById('forkList');
+  const newFork = document.createElement('li');
+  newFork.textContent = `Forked by ${username}`;
+  forkList.appendChild(newFork);
+
+  alert(`Project forked by: ${username}`);
+}
