@@ -273,3 +273,15 @@ function switchToLogin() {
     document.getElementById('signup-form').classList.add('hidden');
     document.getElementById('login-form').classList.remove('hidden');
 }
+// Display file preview
+function showFilePreview() {
+    const fileInput = document.getElementById('file-input');
+    const preview = document.getElementById('file-preview');
+    preview.innerHTML = fileInput.files[0].name;
+}
+
+// Generate a shareable link (dummy link for demo)
+function generateLink() {
+    const link = `https://hotweb.com/share/${Math.random().toString(36).substring(2, 15)}`;
+    document.getElementById('shareable-link').innerText = `Shareable Link: ${link}`;
+}
