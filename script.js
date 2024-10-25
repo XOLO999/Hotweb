@@ -263,3 +263,13 @@ function forkProject() {
 
   alert(`Project forked by: ${username}`);
 }
+// scripts.js
+function switchToSignUp() {
+    document.getElementById('login-form').classList.add('hidden');
+    document.getElementById('signup-form').classList.remove('hidden');
+}
+
+function switchToLogin() {
+    document.getElementById('signup-form').classList.add('hidden');
+    document.getElementById('login-form').classList.remove('hidden');
+}
