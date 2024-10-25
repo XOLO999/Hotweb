@@ -1512,3 +1512,12 @@ body, html {
     display: block;
     margin-top: 10px;
 }
+:root {
+    --bg-color: #18181d;
+    --text-color: #f0f0f5;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
