@@ -285,3 +285,16 @@ function generateLink() {
     const link = `https://hotweb.com/share/${Math.random().toString(36).substring(2, 15)}`;
     document.getElementById('shareable-link').innerText = `Shareable Link: ${link}`;
 }
+function setTheme(theme) {
+    const root = document.documentElement;
+    if (theme === 'light') {
+        root.style.setProperty('--bg-color', '#ffffff');
+        root.style.setProperty('--text-color', '#000000');
+    } else if (theme === 'dark') {
+        root.style.setProperty('--bg-color', '#18181d');
+        root.style.setProperty('--text-color', '#f0f0f5');
+    } else if (theme === 'neon') {
+        root.style.setProperty('--bg-color', '#101820');
+        root.style.setProperty('--text-color', '#00ffcc');
+    }
+}
