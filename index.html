@@ -387,4 +387,47 @@
 
     <script src="scripts.js"></script>
 </body>
-                                                                       </html>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotweb - User Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2>Welcome, Username!</h2>
+                <p class="bio">Your bio goes here.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#files">My Files</a></li>
+                    <li><a href="#themes">Themes</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="files">
+                <h2>My Files</h2>
+                <button class="upload-btn">Upload New File</button>
+                <!-- List of files will go here -->
+            </section>
+            <section id="themes">
+                <h2>Customize Theme</h2>
+                <button onclick="setTheme('light')">Light Mode</button>
+                <button onclick="setTheme('dark')">Dark Mode</button>
+                <button onclick="setTheme('neon')">Neon Mode</button>
+            </section>
+            <section id="settings">
+                <h2>Settings</h2>
+                <p>Account settings and more.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>                                                                      </html>
