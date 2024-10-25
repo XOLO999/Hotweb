@@ -1197,3 +1197,147 @@ footer {
     font-size: 1.1rem;
     letter-spacing: 1px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0a0f1f;
+    color: #e5e5e5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #101522;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00e5ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav a {
+    color: #c0c0c0;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #00e5ff;
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #131829;
+    padding: 40px 20px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 30px 0;
+}
+
+.sidebar ul li a {
+    color: #a0a0a0;
+    font-size: 1.2rem;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background 0.4s, color 0.4s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #202740;
+    color: #00e5ff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.main-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.file-upload {
+    margin-top: 20px;
+    padding: 40px;
+    background: rgba(0, 229, 255, 0.1);
+    border: 2px dashed #00e5ff;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #00e5ff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.file-upload:hover {
+    background-color: rgba(0, 229, 255, 0.2);
+}
+
+.upload-progress {
+    margin-top: 30px;
+}
+
+.upload-progress span {
+    display: block;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #333b50;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #00e5ff;
+    animation: loading 3s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    50% { width: 70%; }
+    100% { width: 100%; }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #101522;
+    color: #a0a0a0;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
