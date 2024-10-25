@@ -1501,3 +1501,14 @@ body, html {
     border-radius: 5px;
     cursor: pointer;
   }
+.file-upload {
+    background-color: #282c34;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+#file-input, button {
+    display: block;
+    margin-top: 10px;
+}
