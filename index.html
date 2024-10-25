@@ -346,3 +346,45 @@
     </footer>
 </body>
   </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotweb - Login / Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Login Section -->
+        <div class="auth-form" id="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Enter your username">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password">
+                <button type="submit">Login</button>
+                <p class="switch-form">Don't have an account? <span onclick="switchToSignUp()">Sign Up</span></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Section -->
+        <div class="auth-form hidden" id="signup-form">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" placeholder="Create a username">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <input type="password" id="signup-confirm-password" placeholder="Confirm your password">
+                <button type="submit">Sign Up</button>
+                <p class="switch-form">Already have an account? <span onclick="switchToLogin()">Login</span></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+                                                                       </html>
