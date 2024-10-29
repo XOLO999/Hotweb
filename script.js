@@ -301,3 +301,35 @@ function setTheme(theme) {
 document.querySelector('.upload-btn').addEventListener('click', () => {
     alert('Upload feature coming soon!');
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const particles = [];
+    const canvas = document.createElement("canvas");
+    document.body.appendChild(canvas);
+    const ctx = canvas.getContext("2d");
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    function createParticle() {
+        const particle = {
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 5 + 1,
+            speedX: Math.random() * 2 - 1,
+            speedY: Math.random() * 2 - 1,
+            color: `hsl(${Math.random() * 360}, 100%, 50%)`
+        };
+        particles.push(particle);
+    }
+
+    function updateParticles() {
+        for (const particle of particles) {
+            particle.x += particle.speedX;
+            particle.y += particle.speedY;
+
+            if (particle.x < 0 || particle.x > canvas.width || particle.y < 0 || particle.y > canvas.height) {
+                particle.x = Math.random() * canvas.width;
+                particle.y = Math.random() * canvas.height;
+            }
+        }
+                               }
