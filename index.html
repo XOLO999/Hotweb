@@ -591,3 +591,55 @@
     <script src="khatarnak-particles.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotweb Hosting - Create & Publish Files</title>
+    <link rel="stylesheet" href="extreme-hosting-styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🔥 Hotweb Hosting 🔥</h1>
+        <p class="subtitle">Host your files instantly!</p>
+        <nav>
+            <ul>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#create-file">Create File</a></li>
+                <li><a href="#published-files">Published Files</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- File Creation Section -->
+        <section id="create-file" class="section">
+            <h2>Create a New File</h2>
+            <form id="fileForm">
+                <label for="fileName">File Name:</label>
+                <input type="text" id="fileName" required>
+                <label for="fileContent">Content:</label>
+                <textarea id="fileContent" rows="5" required></textarea>
+                <button type="button" onclick="createFile()">Create File</button>
+            </form>
+        </section>
+
+        <!-- Published Files Section -->
+        <section id="published-files" class="section">
+            <h2>Published Files</h2>
+            <div id="fileList">
+                <!-- Created files will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Hosted by <strong>Xolo999</strong> | Publish your files on the go</p>
+    </footer>
+
+    <script src="extreme-particle.js"></script>
+    <script src="file-publish.js"></script>
+</body>
+</html>
