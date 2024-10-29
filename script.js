@@ -298,3 +298,6 @@ function setTheme(theme) {
         root.style.setProperty('--text-color', '#00ffcc');
     }
 }
+document.querySelector('.upload-btn').addEventListener('click', () => {
+    alert('Upload feature coming soon!');
+});
