@@ -389,3 +389,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
     animate();
 });
+function createFile() {
+    const fileName = document.getElementById("fileName").value;
+    const fileContent = document.getElementById("fileContent").value;
+
+    if (fileName && fileContent) {
+        // Save file to local storage
+        localStorage.setItem(fileName, fileContent);
+
+        // Display file in published files section
+        displayFiles();
+        
+        // Clear input fields
+        document.getElementById("fileForm").reset();
+        alert(`File "${fileName}" created successfully!`);
+    } else {
+        alert("Please enter both file name and content.");
+    }
+}
+
+function displayFiles() {
+    const fileList = document.getElementById("fileList");
+    fileList.innerHTML = ""; // Clear the current file list
+
+    // Loop through local storage to fetch files
+    for (let i = 0; i < localStorage.length; i++) {
+        const fileName = localStorage.key(i);
+        const fileContent = localStorage.getItem(fileName);
+
+        const fileElement = document.createElement("div");
+        fileElement.className = "file-item";
+        fileElement.innerHTML = `
+            <h3>${fileName}</h3>
+            <p>${fileContent}</p>
+            <button onclick="deleteFile('${fileName}')">Delete</button>
+        `;
+        fileList.appendChild(fileElement);
+    }
+}
+
+function deleteFile(fileName) {
+    localStorage.removeItem(fileName);
+    displayFiles();
+}
+
+// Display files on page load
+window.onload = displayFiles;
