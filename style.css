@@ -1959,3 +1959,59 @@ body {
     0%, 100% { opacity: 0.7; }
     50% { opacity: 1; }
   }
+/* Existing CSS */
+
+.section {
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+#fileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+#fileForm input, #fileForm textarea, #fileForm button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+#fileForm button {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#fileList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.file-item {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.file-item h3 {
+    color: #ff6f91;
+}
+
+.file-item button {
+    background: #ff0054;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+        }
