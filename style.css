@@ -2015,3 +2015,187 @@ body {
     border-radius: 5px;
     cursor: pointer;
         }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+.header {
+    background: #0f3460;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    color: #00f9ff;
+    text-shadow: 0 0 20px #00f9ff, 0 0 40px #00e0ff;
+    animation: neonGlow 2s ease-in-out infinite alternate;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ffffffb3;
+    margin-top: 10px;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1.5rem;
+    margin-top: 25px;
+}
+
+.header nav a {
+    color: #ffde7d;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff512f, #00c6ff);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.header nav a:hover {
+    background: linear-gradient(45deg, #00c6ff, #ff512f);
+    transform: rotate(-5deg) scale(1.15);
+    box-shadow: 0 0 20px #00e0ff, 0 0 35px #00ffdd;
+}
+
+.main-content {
+    padding: 50px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.plan-card {
+    background: linear-gradient(145deg, #1f4068, #1b1b2f);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.5);
+    color: #ffffffc7;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: transform 0.4s, box-shadow 0.4s;
+    perspective: 800px;
+}
+
+.plan-card:hover {
+    transform: rotateY(25deg) rotateX(15deg) scale(1.1);
+    box-shadow: 0px 8px 25px rgba(100, 200, 255, 0.8);
+    background: linear-gradient(145deg, #16213e, #0f3460);
+    color: #00e0ff;
+}
+
+#fileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+#fileForm input, #fileForm textarea, #fileForm button {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #0f3460;
+    background-color: #1f4068;
+    color: #fff;
+}
+
+#fileForm button {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+#fileForm button:hover {
+    background: linear-gradient(135deg, #00c6ff, #ff512f);
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0px 8px 25px rgba(255, 100, 100, 0.8);
+}
+
+#fileList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.file-item {
+    background: #2e2e6d;
+    padding: 20px;
+    border-radius: 8px;
+    color: #00f9ff;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.file-item h3 {
+    color: #ff6f91;
+    font-weight: bold;
+}
+
+.file-item button {
+    background: #ff0054;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.file-item button:hover {
+    background: #00e0ff;
+    color: #111;
+    transform: scale(1.1);
+}
+
+.footer {
+    background: #1a1a2e;
+    color: #00e0ff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #00c6ff;
+    font-size: 0.9rem;
+}
+
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 5px #ff0054, 0 0 15px #ff6f91; }
+    100% { text-shadow: 0 0 25px #ff0054, 0 0 45px #ff6f91; }
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
